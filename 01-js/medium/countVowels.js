@@ -6,7 +6,23 @@
 */
 
 function countVowels(str) {
-    // Your code here
+  str = str.toLowerCase();
+  const vowel_list = ['a','e','i','o','u'];
+  let count = 0;
+  for (let i=0; i<str.length; i++) {
+    if (vowel_list.includes(str[i])) {
+      count++;
+    }
+  }
+  return count;
 }
+
+// function main() {
+//   console.log(countVowels("the quick brown fox"));
+// }
+
+// if (require.main === module) {
+//   main();
+// }
 
 module.exports = countVowels;

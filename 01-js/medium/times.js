@@ -9,5 +9,19 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-    return 0.01;
+    let count=1;
+    let x=Date.now();
+    for (let i=1; i<=n; i++) {
+        count++;
+    }
+    let y=Date.now();
+    console.log("Time taken for "+n+"s : "+(y-x));
 }
+
+// function main() {
+//     calculateTime(1000000000);
+// }
+
+// if (require.main === module) {
+//     main();
+// }
